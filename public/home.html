@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shii</title>
+</head>
+
+    <!-- Navbar -->
+      <header>
+        <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="viewposts.html">Posts</a>
+        <a href="roadmap.html">Roadmap</a>
+        <!--
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      -->
+      </div>
+    </header>
+      
+<body>
+    <h1 id="welcomeMessage">Welcome to the site</h1>
+    <div id="loggedInContent" style="display: none;">
+        <p><a class="button" href="createpost.html">create post</a></p>
+        <p><a class="button" href="viewposts.html">view posts</a></p>
+        <h2 class="counter-display">(..)</h2>
+        <p>currently registered users</p>
+        <footer>
+          <p><a class="button2" href="logout.html">Log Out</a></p>
+        </footer>
+    </div>
+
+    <div id="guestContent" style="display: none;">
+        <p><a class="button" href="reg.html">Register</a></p>
+        <p><a class="button" href="login.html">Log In</a></p>
+        <footer>
+            <p>on yo dihh</p>
+        </footer>
+    </div>
+
+    <!-- Include auth.js to check login status -->
+    <script src="auth.js"></script>
+
+    <!-- Add Counter -->
+    <script src="counter.js"></script>
+</body>
+</html>

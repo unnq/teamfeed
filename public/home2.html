@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shii</title>
+</head>
+<body>
+    <h1 id="welcomeMessage">Welcome to the site</h1>
+
+    <div id="loggedInContent" style="display: none;">
+        <p>Exclusive content for logged-in users!</p>
+        <h1 class="counter-display">(..)</h1>
+        <footer>
+            <p>on yo dihh</p>
+            <p><a href="logout.html">Log Out</a></p>
+        </footer>
+    </div>
+
+    <div id="guestContent" style="display: none;">
+        <p><a class="button" href="reg.html">Register</a></p>
+        <p><a class="button" href="login.html">Log In</a></p>
+        <footer>
+            <p>on yo dihh</p>
+        </footer>
+    </div>
+
+    <!-- Include auth.js to check login status -->
+    <script src="auth.js"></script>
+
+    <!-- Add Counter -->
+    <script src="counter.js"></script>
+</body>
+</html>

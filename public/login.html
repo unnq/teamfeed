@@ -1,0 +1,43 @@
+login<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<!-- Navbar -->
+<header>
+  <div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="roadmap.html">Roadmap</a>
+  <!--
+  <a href="viewposts.html">Posts</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+-->
+</div>
+</header>
+
+<body>
+    <form method="POST" action="http://localhost:3000/login">
+        <fieldset>
+        <label for="username">username:
+            <input type="text" name="username" required>
+        </label>
+        <label for="password">Password:
+            <input type="password" name="password" required>
+        </label>
+        </fieldset>
+    <button class="button" type="submit" value="Submit">Log In</button>
+</form>
+</body>
+</html>

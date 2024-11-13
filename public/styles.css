@@ -1,0 +1,262 @@
+/* MAIN STYLES */
+
+h1, h2 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+p {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    background-color: #36393e;
+    text-align: center;
+    margin: auto;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-family: Helvetica, sans-serif;
+}
+input, textarea {
+    color: #ffffff;
+    background-color: #36393e;
+    border: 2px solid #535963;
+    border-radius: 4px;
+    padding: 6px;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border-radius: 6px;
+    /* border: 4px solid #535963; */
+    border: none;
+}
+fieldset {
+    border: 0;
+    font-family: helvetica, sans-serif;
+}
+header {
+    margin-top: 0%;
+}
+
+
+/* CLASSES */
+
+.done {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #04AA6D;
+
+}
+
+.boxedin {
+    border: 5px solid #000000;
+    background-color: #535963;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.headerbar {
+    position: fixed;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.button:hover {
+    background-color: #ffffff;
+    color: white;
+}
+
+.button2 {
+    background-color: none;
+    border: 2px solid #535963;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.button2:hover {
+    background-color: none;
+    color: #000000;
+}
+
+.invisibutton {
+    background-color: #36393e;
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    transition-duration: 0.4s;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.invisibutton:hover {
+    border-radius: 8px;
+    border: 2px solid #36393e
+}
+
+/* Images section */
+
+.eyecenter {
+    width: 20px;
+}
+.arrow-right {
+    width: 20px;
+    margin: auto;
+}
+
+/* Navbar section */
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    font-weight: bolder;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #969696;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* Posts styling */
+
+  #postsContainer {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.post {
+    background-color: none;
+    border: 2px solid #535963;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px;
+    width: 20%;
+    color: #000000;
+    display: inline-block;
+}
+
+.post p {
+    font-size: 1em;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
+    padding: 6px;
+    color: #000000;
+    text-align: right;
+}
+
+.post .username {
+    font-size: 0.9em;
+    display: block;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.post .date {
+    font-size: 0.9em;
+    color: #222222;
+    margin-left: 5px;
+}
