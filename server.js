@@ -126,7 +126,7 @@ app.post('/login', async (req, res) => {
             
             // Set the token as a cookie and redirect to homepage
             res.cookie('authToken', token, { httpOnly: true, maxAge: 3600000 });  // Cookie expires in 1 hour
-            return res.redirect('/home.html'); // Adjust this path if your homepage file is named differently
+            return res.redirect('/index.html'); // Adjust this path if your homepage file is named differently
         });
     } catch (error) {
         res.status(500).json({ error: 'Login failed' });
@@ -142,7 +142,7 @@ app.get('/user-info', authenticateToken, (req, res) => {
 app.get('/logout', (req, res) => {
     // Clear the authToken cookie by setting it to an expired date
     res.clearCookie('authToken');
-    res.redirect('/home.html'); // Redirect to homepage or login page after logout
+    res.redirect('/index.html'); // Redirect to homepage or login page after logout
 });
 
 
