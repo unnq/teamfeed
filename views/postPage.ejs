@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Navbar -->
+    <header>
+      <div class="navbar">
+      <a href="/home.html">Home</a>
+      <a href="/viewposts.html">Posts</a>
+      <a href="/roadmap.html">Roadmap</a>
+      <!--
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    -->
+    </div>
+  </header>
+ 
+  <main>
+    <h1><%= post.title %></h1>
+    <p>By <%= post.username %> on <%= post.date %></p>
+    <p><%= post.body %></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Website</p>
+  </footer>
+</body>
+</html>
